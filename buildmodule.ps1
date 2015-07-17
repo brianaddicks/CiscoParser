@@ -65,7 +65,8 @@ $ManifestParams = @{ Path = $ManifestFile
                      RequiredAssemblies = @("$ModuleName.dll",'System.Web')
                      Author             = 'Brian Addicks'
                      RootModule         = "$ModuleName.psm1"
-                     PowerShellVersion  = '4.0' }
+                     PowerShellVersion  = '4.0' 
+                     RequiredModules    = @('ipv4math')}
 
 New-ModuleManifest @ManifestParams
 

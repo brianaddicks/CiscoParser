@@ -9,8 +9,8 @@ using System.Web;
 
 namespace CiscoParser {
 	
-    public class SwitchportAccess {
-		public bool Enabled { get; set; }
-		public int Vlan { get; set; }
+    public class ChannelGroup {
+		public int GroupNumber  { get; set; }
+		public string Mode  { get; set; }
     }
 }

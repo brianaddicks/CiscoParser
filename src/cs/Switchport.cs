@@ -11,7 +11,14 @@ namespace CiscoParser {
 	
     public class Switchport {
 		public bool Enabled { get; set; }
-		//public SwitchPortAccess Access { get; set; }
-		//public SwitchPortTrunk Trunk { get; set; }
+		public SwitchportAccess Access { get; set; }
+		public SwitchportTrunk Trunk { get; set; }
+		
+		public Switchport () {
+			this.Access = new SwitchportAccess {};
+			this.Trunk = new SwitchportTrunk {};
+		}
     }
+	
+	
 }

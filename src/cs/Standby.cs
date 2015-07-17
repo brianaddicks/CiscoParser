@@ -11,6 +11,7 @@ namespace CiscoParser {
 	
     public class Standby {
 		public string IpAddress { get; set; }
+		public int Group { get; set; }
 		public int Priority { get; set; }
     }
 }

@@ -15,7 +15,6 @@ namespace CiscoParser {
 		public string Protocol { get; set; }
 		public string Action { get; set; }
 		
-		
 		public string SourceAddress { get; set; }
 		public string SourcePort { get; set; }
 		

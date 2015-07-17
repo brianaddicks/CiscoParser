@@ -18,5 +18,13 @@ namespace CiscoParser {
 		public int Speed { get; set; }
 		public string Duplex  { get; set; }
 		public InterfaceLayer3 Layer3 { get; set; }
+		
+		public ChannelGroup ChannelGroup  { get; set; }
+		
+		public Interface () {
+			this.Switchport = new Switchport {};
+			this.Layer3 = new InterfaceLayer3 {};
+			this.ChannelGroup = new ChannelGroup {};
+		}
     }
 }

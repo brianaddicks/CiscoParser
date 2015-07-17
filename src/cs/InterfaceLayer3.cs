@@ -12,7 +12,11 @@ namespace CiscoParser {
     public class InterfaceLayer3 {
 		public string IpAddress { get; set; }
 		public List<string> HelperAddresses { get; set; }
-		public Standby Standby { get; set; }
+		public List<Standby> StandbyGroups { get; set; }
 		public AccessGroup AccessGroup { get; set; }
+		
+		public InterfaceLayer3 () {
+			this.AccessGroup = new AccessGroup {};
+		}
     }
 }

@@ -11,6 +11,7 @@ namespace CiscoParser {
     public class SwitchportTrunk {
 		public bool Enabled { get; set; }
 		public string Encapsulation { get; set; }
+		public int NativeVlan { get; set; }
 		public List<int> AllowedVlans {get; set; }
     }
 }

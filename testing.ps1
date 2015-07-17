@@ -15,5 +15,7 @@ if ($PushToStrap) {
 ipmo .\*.psd1
 
 $ConfigDir = "\\vmware-host\Shared Folders\Dropbox\config dump"
-$ConfigFile = $ConfigDir + '\co-6509c-mdf-rtr1.log'
+$ConfigFile = $ConfigDir + '\co-6509c-mdf-rtr2.log'
+$Config = gc $ConfigFile
 	
+$global:test = Get-CiscoInterface $Config -Verbose 
