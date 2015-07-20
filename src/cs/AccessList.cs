@@ -12,7 +12,6 @@ namespace CiscoParser {
     public class AccessList {
 		public string Name { get; set; }
 		public string Type { get; set; }
-		public string Action { get; set; }
 		public List<AclRule> Rules { get; set; }
     }
 }
